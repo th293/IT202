@@ -1,2 +1,14 @@
+
 config.php
+nano .gitignore
+conf.php
+
+commit .gitignore file
+
+nano conf.php
+<?php
+hi
+?>
+
+
 
