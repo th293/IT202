@@ -55,6 +55,18 @@ function validate(){
 	First element should be "Select One", and it should require that
 	some other value is selected in order to proceed
 	*/
+
+	var sel = form.dd;
+	//To get by ID uncomment below
+	//sel = document.getElementById("mySelectId");
+	//sample to show debugger use
+	//succeeded = false;
+	//wrongItem.value = "";
+	if(sel.selectedIndex == 0){
+		alert("Please pick a value");
+		succeeded = false;
+	}
+	console.log(sel.options[sel.selectedIndex].value);	
 	return succeeded;	
 }
 </script>
