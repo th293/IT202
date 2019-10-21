@@ -102,6 +102,7 @@ input { border: 1px solid black; }
 </div>
 </body>
 </html>
+
 <?php checkPasswords();?>
 <?php
 if(isset($_POST)){

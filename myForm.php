@@ -8,6 +8,17 @@ function getName(){
 		echo "<p>Hello, " . $_GET['name'] . "</p>";
 		}
 }
+function checkPasswords(){
+	if(isset($_POST['password']) && isset($_POST['confirm'])){
+		if($_POST['password'] == $_POST['confirm']){
+			echo "<br>Passwords Matched!<br>";
+		}
+		else{
+			echo "<br>Passwords didn't match!<br>";
+		}
+	}
+}
+
 ?>
 <html>
 <head></head>
